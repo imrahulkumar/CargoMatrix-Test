@@ -19,4 +19,5 @@ Steps of execution-
 3. Run command json-server db.json.
 
 Hosted using [surge.sh](https://surge.sh/)
-Hosted link [cargo-matrix-test-assessment](http://abundant-act.surge.sh/add-contact)
+
+Hosted link [cargo-matrix-test-assessment](http://abundant-act.surge.sh/)
