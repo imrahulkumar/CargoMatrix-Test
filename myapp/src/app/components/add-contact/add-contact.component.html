@@ -1,0 +1,44 @@
+<section>
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+
+      <div style="position: absolute; right: 20%">
+        <a class="" [routerLink]="[ '/contact-list']">Show All Contacts</a>
+      </div>
+
+
+      <div class="col-12 col-md-8 col-lg-8 col-xl-6">
+        <form [formGroup]="addForm" (ngSubmit)="onSubmit(addForm.value)">
+          <div class="row">
+            <div class="col text-center">
+              <h1>Add Contact</h1>
+            </div>
+          </div>
+          <div class="row align-items-center mt-4">
+            <div class="col">
+              <input type="text" formControlName="id" class="form-control" placeholder="id" [readonly]="idExting">
+            </div>
+            <div class="col">
+              <input type="text" formControlName="firstName" class="form-control" placeholder="Firstname">
+            </div>
+            <div class="col">
+              <input type="text" formControlName="lastName" class="form-control" placeholder="Lastname">
+            </div>
+          </div>
+          <div class="row align-items-center mt-4">
+            <div class="col">
+              <input type="email" formControlName="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="col">
+              <input type="tel" formControlName="phone" class="form-control" placeholder="Phone">
+            </div>
+          </div>
+          <div class="row justify-content-center mt-8 mt-5">
+
+            <button class="btn btn-primary mt-8">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
